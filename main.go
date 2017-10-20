@@ -67,7 +67,7 @@ func (l *Logger) Set(key, val string) {
 func (l *Logger) log(severity, message string) {
 	l.Payload = &Payload{
 		Severity: severity,
-		EventTime: time.Now().String(),
+		EventTime: time.Now().Format(time.RFC3339),
 		Message: message,
 		Data: l.Payload.Data,
 		ServiceContext: l.Payload.ServiceContext,
