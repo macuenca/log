@@ -1,4 +1,4 @@
-# teltech/logger
+# logger
 
 Super simple structured logging mechanism for Go projects with [Stackdriver format](https://cloud.google.com/error-reporting/docs/formatting-error-messages) compatibility
 
